@@ -120,7 +120,7 @@ subdag_op = SubDagOperator(
 
 email_op = EmailOperator(
     task_id='send_mail',
-    to="saar.bergerbest@fyber.com",
+    to="dummy@fyber.com",
     subject="Airflow 101",
     html_content="""<p> {{ ti.xcom_pull(dag_id='subdag_example.databricks_job', task_ids='extract_result') }} </p>""",
     dag=dag)
