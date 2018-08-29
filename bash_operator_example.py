@@ -21,7 +21,7 @@ dag = DAG(dag_id='bash_operator_example', default_args=default_args, schedule_in
 
 op = BashOperator(
     task_id='bash_operator',
-    bash_command="echo $(ls /home/saar/pythonenv/airflow_home/airflow_dags/Session_Examples)",
+    bash_command="echo $(ls /home/airflow_dags/Session_Examples)",
     dag=dag)
 
 op
